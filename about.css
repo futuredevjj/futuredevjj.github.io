@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:ital,wght@0,900;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:ital,wght@0,900;1,800&family=Roboto:wght@300&display=swap');
+
+*, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(COFFEE.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 1;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 530;
+    width: 100%;
+}
+
+nav {
+    justify-content: center;
+    text-align: center;
+    font-size: 100%;
+    margin: 0 0 0 740px;
+}
+
+ul {
+    list-style-type: none;  
+}
+
+li {
+    display: inline-block;
+    padding: 40px;
+}
+
+header a {
+    position: absolute;
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    font-weight: 550;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    display: block;
+    transform: translateY(100%);
+    transform: translateX(-90%);
+    font-size: 180%;
+    border-radius: 50% 20% / 10% 40%;
+    border: 3px solid white;
+    width: 30%;
+    animation: godown 1s linear;
+    box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+@keyframes godown {
+    from {
+        transform: translateY(30%);
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateY(100%);
+        transform: translateX(-90%);
+    }
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 530;
+    display: block;
+    transform: translateX(5%);
+    font-size: 16px;
+    animation: brandx 1.5s ease-in;
+    padding: 2px;
+    width: 90%;
+}
+
+.h2 {
+    transform: translateY(0%);
+    padding: 10px 0 100px 0;
+    border-bottom: 3px solid white;
+    border-radius: 10% 30% 50% 70%;
+    animation: smoke 1.5s ease-in;
+}
+
+@keyframes brandx {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.graph {
+    height: 250px;
+    width: auto;
+    margin: auto;
+    padding: auto;
+    display: block;
+    transform: translateX(115%) translateY(-210%);
+    box-shadow: 0px 6px 27px 0px rgba(0,0,0,0.75);
+    animation: smoke 1.5s ease-in;
+}
+
+.graph:hover {
+    animation: goside 1.5s linear  forwards;
+}
+
+@keyframes goside {
+    from {
+        transform: scale(1) translateX(115%) translateY(-210%);
+    }
+    to {
+        transform: scale(1.3) translateX(40%) translateY(-160%);
+    }
+}
+
+.smoke {
+    height: 80px;
+    width: auto;
+    margin: auto;
+    padding: auto;
+    display: block;
+    transform: translateY(-118%);
+    animation: smoke 1.5s ease-in;
+}
+
+.cup {
+    height: 80px;
+    width: auto;
+    margin: auto;
+    padding: auto;
+    display: block;
+    transform: translateY(5%);
+}
+
+@keyframes smoke {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

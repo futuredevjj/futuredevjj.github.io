@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:ital,wght@0,900;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:ital,wght@0,900;1,800&family=Roboto:wght@300&display=swap');
+
+*, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(COFFEE.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 530;
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    justify-content: center;
+    text-align: center;
+    font-size: 100%;
+    margin: 0 0 0 740px;
+}
+
+ul {
+    list-style-type: none;  
+}
+
+li {
+    display: inline-block;
+    padding: 40px;
+}
+
+header a {
+    position: absolute;
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    font-weight: 550;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    display: block;
+    transform: translateY(305%);
+    font-size: 180%;
+    border-radius: 50% 20% / 10% 40%;
+    border: 3px solid white;
+    width: 30%;
+    animation: godown 2s linear;
+    box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+@keyframes godown {
+    from {
+        transform: translateY(80%);
+    }
+    to {
+        transform: translateY(305%);
+    }
+}
+
+.cup {
+    height: 80px;
+    width: auto;
+    margin: auto;
+    padding: auto;
+    display: block;
+    transform: translateY(235%);
+    animation: smoke 1.5s ease-in;
+}
+
+.smoke {
+    height: 80px;
+    width: auto;
+    margin: auto;
+    padding: auto;
+    display: block;
+    transform: translateY(123%);
+    animation: smoke 5s ease-in;
+}
+
+@keyframes brandx {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes smoke {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    display: block;
+    transform: translateY(690%);
+    font-size: 14px;
+    animation: brandx 2.5s ease-in;
+}
+
+.btn {
+    font-family: 'Dancing Script', cursive;
+    background: none;
+    border: 2px solid white;
+    padding: 8px;
+    font-size: 15px;
+    margin: auto;
+    padding: auto;
+    display: block;
+    transform: translateY(335%);
+    color: white;
+    cursor: pointer;
+    animation: brandx 2.5s ease-in;
+    box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.btn:hover {
+    transform: translateY(335%) scale(1.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: transform 1s ease-out;
+}
