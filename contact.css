@@ -100,7 +100,7 @@ h2 {
 
 .wrapper{
     display: inline-flex;
-    transform: translateX(82%) translateY(320%);
+    transform: translateX(85%) translateY(320%);
   }
   .wrapper .icon{
     margin: 0 20px;
